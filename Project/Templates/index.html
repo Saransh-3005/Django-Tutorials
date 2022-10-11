@@ -1,3 +1,7 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'Styles2.css' %}">
+
 <h1>Enter the text here</h1>
 <form method="post" action="counter">
     {% csrf_token %}
