@@ -7,7 +7,7 @@ def index (request):
 
 
 def counter(request):
-     word=request.GET['text1']
+     word=request.POST['text1']
      count=len(word.split())
      return render(request,'counter.html',{"word":count})
 
