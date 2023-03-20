@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">
-                    <img src="{% static 'assets/img/hero-img.svg' %}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+                    <img src="" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
                 </div>
             </div>
         </div>
@@ -122,13 +122,16 @@
             <div class="container position-relative">
                 <div class="row gy-4 mt-5">
                     {% for feature in features %}
+                    <a href="{% static {{feature.link}} %}">
                     <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-easel"></i></div>
                             <h4 class="title"><a href="" class="stretched-link">{{feature.head}}</a></h4>
-                            <p>{{feature.details}}</p>
+                            <p>{{feature.object}}</p>
                         </div>
-                    </div>
+                    
+                    </div> 
+                </a>
                     <!--End Icon Box -->
                     {% endfor %}
 

@@ -6,7 +6,10 @@ from django.db import models
 class Feature(models.Model):
     head = models.CharField(max_length= 100)
     details = models.CharField(max_length= 500)
+    link = models.CharField(max_length=700)
    
+
 class Blog(models.Model):
-    heading = models.CharField(max_length = 1000)
-    body = models.CharField(max_length = 1000000)
+    head =  models.CharField(max_length= 1000)
+    body =  models.CharField(max_length= 10000)
+
